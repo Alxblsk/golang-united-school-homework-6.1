@@ -106,7 +106,7 @@ func (b *box) RemoveAllCircles() error {
 	b.shapes = cleanedShapes
 
 	if circlesFound == 0 {
-		errors.New("There are no Circles in the list")
+		return errors.New("There are no Circles in the list")
 	}
 
 	return nil
